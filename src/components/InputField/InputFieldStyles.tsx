@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 70%;
+  width: 100%;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
 `;
 
 export const Form = styled.form`
@@ -13,12 +17,13 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   width: 100%;
+
   border-radius: 50px;
   padding: 20px 30px;
   font-size: 25px;
   border: none;
   transition: 0.2s;
-  box-shadow: inset 0 0 5px black;
+  box-shadow: inset 0 0 5px black, 0px 5px 20px rgba(0, 0, 0, 0.2);
 
   &:focus {
     box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.2);
